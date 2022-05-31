@@ -38,6 +38,9 @@ You can of course skip the build process above and jump straight to installation
 docker extension install noelm/swagger-editor-extension:0.0.2
 ```
 
+![Swagger Editor Docker Ext](Swagger-Editor-Docker-Ext.png?raw=true "Swagger Editor Docker Extension")
+
+
 ### Remove the extension
 ```
 docker extension uninstall noelm/swagger-editor-extension:0.0.2
