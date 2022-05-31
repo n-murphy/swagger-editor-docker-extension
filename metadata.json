@@ -1,0 +1,10 @@
+{
+  "icon": "swagger.svg",
+  "ui": {
+    "dashboard-tab": {
+      "title": "Swagger Editor",
+      "root": "/swagger-editor",
+      "src": "index.html"
+    }
+  }
+}
