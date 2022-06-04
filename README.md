@@ -18,9 +18,6 @@ mv docker-extension ~/.docker/cli-plugins
 
 If you want to build the extension locally then run the following:
 ```
-# clone a copy of the swagger-editor repository
-git clone https://github.com/swagger-api/swagger-editor.git
-
 # build the extension
 docker buildx build -t noelm/swagger-editor-extension:0.0.2 .
 
