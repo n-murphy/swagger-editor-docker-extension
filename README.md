@@ -2,17 +2,24 @@
 
 This repository contains the source and instructions for adding the Swagger Editor to Docker Desktop as an extension.
 
-**Note** As the Docker Desktop extension framework is currently in beta, you need to manually install the related binary. At the time of writing this is currently at version 0.2.4.
 
-You can download the binary from https://github.com/docker/extensions-sdk/releases/tag/v0.2.4 and then follow the instructions at https://docs.docker.com/desktop/extensions-sdk/#prerequisites to setup the plugin.
+### Note
+From version **4.10.0** of Docker Desktop you no longer need to manaully install the Docker extension CLI as it is now bundled by default.
 
-For example if you are on Linux then its a matter of running the following:
-```
-wget https://github.com/docker/extensions-sdk/releases/download/v0.2.4/desktop-extension-cli-linux-amd64.tar.gz
-tar -xvzf desktop-extension-cli-linux-amd64.tar.gz
-mkdir -p ~/.docker/cli-plugins
-mv docker-extension ~/.docker/cli-plugins
-```
+----
+#### For Docker Desktop versions less than 4.10.10
+> If for some reason you are still running a version of Docker Desktop that is less than **4.10.0** (and greater than 4.8.x) then you will need to manually install the Docker extension CLI binary.
+>
+> You can download the binary from https://github.com/docker/extensions-sdk/releases/tag/v0.2.4 and then follow the instructions at https://docs.docker.com/desktop/extensions-sdk/#prerequisites to setup the plugin.
+>
+> For example if you are on Linux then its a matter of running the following:
+> ```
+> wget https://github.com/docker/extensions-sdk/releases/download/v0.2.4/desktop-extension-cli-linux-amd64.tar.gz
+> tar -xvzf desktop-extension-cli-linux-amd64.tar.gz
+> mkdir -p ~/.docker/cli-plugins
+> mv docker-extension ~/.docker/cli-plugins
+> ```
+----
 
 ### Build locally
 
