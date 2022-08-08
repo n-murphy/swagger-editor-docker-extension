@@ -26,26 +26,26 @@ From version **4.10.0** of Docker Desktop you no longer need to manaully install
 If you want to build the extension locally then run the following:
 ```
 # build the extension
-docker buildx build -t noelm/swagger-editor-extension:0.0.4 .
+docker buildx build -t noelm/swagger-editor-extension:4.3.0 .
 
 # validate the extension
-docker extension validate noelm/swagger-editor-extension:0.0.4
+docker extension validate noelm/swagger-editor-extension:4.3.0
 # you should get the following message:
-# The extension image "noelm/swagger-editor-extension:0.0.4" is valid
+# The extension image "noelm/swagger-editor-extension:4.3.0" is valid
 ```
 
 ### Install the extension
 
 You can of course skip the build process above and jump straight to installation by running the following:
-**Note** The current image hosted on docker hub with the 0.0.4 tag has been tested on Ubuntu 20.04 and MacOS. 
+**Note** The current image hosted on docker hub with the `4.3.0` tag has been tested on Ubuntu 20.04 and MacOS. 
 ```
-docker extension install noelm/swagger-editor-extension:0.0.4
+docker extension install noelm/swagger-editor-extension:4.3.0
 ```
 
-![Swagger Editor Docker Ext](Swagger-Editor-Docker-Ext.png?raw=true "Swagger Editor Docker Extension")
+![Swagger Editor Docker Ext](Swagger-Editor-Docker-Ext-v4.3.0.png?raw=true "Swagger Editor Docker Extension")
 
 
 ### Remove the extension
 ```
-docker extension uninstall noelm/swagger-editor-extension:0.0.4
+docker extension uninstall noelm/swagger-editor-extension:4.3.0
 ```
