@@ -1,0 +1,7 @@
+---
+services:
+  swagger-editor:
+    image: noelm/swagger-editor:4.3.0
+    container_name: swagger-editor
+    ports:
+      - 8080:8080

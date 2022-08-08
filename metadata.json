@@ -1,9 +1,12 @@
 {
   "icon": "swagger.svg",
+  "vm": {
+    "composefile": "docker-compose.yaml"
+  },
   "ui": {
     "dashboard-tab": {
       "title": "Swagger Editor",
-      "root": "/swagger-editor",
+      "root": "/ui",
       "src": "index.html"
     }
   }

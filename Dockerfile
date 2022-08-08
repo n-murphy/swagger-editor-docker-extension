@@ -1,14 +1,4 @@
-FROM alpine:latest AS client-builder
-
-RUN apk fix && \
-    apk --no-cache --update add git
-
-WORKDIR /tmp
-
-RUN git clone https://github.com/swagger-api/swagger-editor.git
-
-
-FROM scratch
+FROM alpine
 
 LABEL org.opencontainers.image.title="Swagger Editor" \
     org.opencontainers.image.description="Swagger Editor Docker extension" \
@@ -21,6 +11,7 @@ LABEL org.opencontainers.image.title="Swagger Editor" \
     com.docker.extension.additional-urls='[{"title":"Swagger","url":"https://swagger.io/"}]' \
     com.docker.extension.changelog=""
 
-COPY --from=client-builder /tmp/swagger-editor ./swagger-editor
-COPY swagger.svg swagger.svg
+COPY swagger.svg .
+COPY docker-compose.yaml .
 COPY metadata.json .
+COPY ui ui
