@@ -10,10 +10,10 @@ From version **4.10.0** of Docker Desktop you no longer need to manaully install
 #### For Docker Desktop versions less than 4.10.10
 > If for some reason you are still running a version of Docker Desktop that is less than **4.10.0** (and greater than 4.8.x) then you will need to manually install the Docker extension CLI binary.
 >
-> You can download the binary from https://github.com/docker/extensions-sdk/releases/tag/v0.2.4 and then follow the instructions at https://docs.docker.com/desktop/extensions-sdk/#prerequisites to setup the plugin.
+> You can download the binary from [here](https://github.com/docker/extensions-sdk/releases/tag/v0.2.4) and then follow the [instructions](https://docs.docker.com/desktop/extensions-sdk/#prerequisites) to setup the plugin.
 >
 > For example if you are on Linux then its a matter of running the following:
-> ```
+> ``` sh
 > wget https://github.com/docker/extensions-sdk/releases/download/v0.2.4/desktop-extension-cli-linux-amd64.tar.gz
 > tar -xvzf desktop-extension-cli-linux-amd64.tar.gz
 > mkdir -p ~/.docker/cli-plugins
@@ -24,7 +24,7 @@ From version **4.10.0** of Docker Desktop you no longer need to manaully install
 ### Build locally
 
 If you want to build the extension locally then run the following:
-```
+``` sh
 # build the extension
 docker buildx build -t noelm/swagger-editor-extension:4.4.2 .
 
@@ -38,7 +38,7 @@ docker extension validate noelm/swagger-editor-extension:4.4.2
 
 You can of course skip the build process above and jump straight to installation by running the following:
 **Note** The current image hosted on docker hub with the `4.4.2` tag has been tested on Ubuntu 20.04 and MacOS. 
-```
+``` sh
 docker extension install noelm/swagger-editor-extension:4.4.2
 ```
 
@@ -46,6 +46,6 @@ docker extension install noelm/swagger-editor-extension:4.4.2
 
 
 ### Remove the extension
-```
+``` sh
 docker extension uninstall noelm/swagger-editor-extension:4.4.2
 ```
