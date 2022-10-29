@@ -49,3 +49,7 @@ docker extension install noelm/swagger-editor-extension:4.4.2
 ``` sh
 docker extension uninstall noelm/swagger-editor-extension:4.4.2
 ```
+### Contributors 👨‍💻
+<a href="https://github.com/n-murphy/swagger-editor-docker-extension/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=n-murphy/swagger-editor-docker-extension" />
+</a>
